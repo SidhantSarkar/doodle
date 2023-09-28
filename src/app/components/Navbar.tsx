@@ -27,7 +27,7 @@ export default function Navbar() {
         <Flex display={{
             initial: 'flex',
             md: 'none'
-        }} width="100%" position="fixed" style={{zIndex:1}}>
+        }} width="100%" position="fixed" style={{zIndex:1}} id="header">
             <Flex direction="row" align="center" justify="between" py="6" px="6" width="100%" style={{background: "var(--gray-1)"}}>
                     <Heading size="7" style={{
                         fontWeight: 600,

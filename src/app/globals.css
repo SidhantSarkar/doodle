@@ -92,7 +92,7 @@ body {
 body {
   width: 100vw;
   height: 100vh;
-  --dot-bg: var(--slate-3);
+  --dot-bg: var(--slate-2);
   --dot-color: var(--gray-7);
   --dot-size: 2px;
   --dot-space: 25px;
@@ -147,6 +147,10 @@ a {
   #my-crown {
     width: 30% !important;
   }
+  .bounding-box {
+    max-height: none !important;
+    max-width: none !important;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -156,14 +160,6 @@ a {
 
   .main-container {
     padding-left: 32% !important;
-  }
-
-  #my-crown {
-    top: 20rem !important ;
-  }
-
-  #my-note {
-    width: 30% !important;
   }
 }
 
@@ -253,3 +249,25 @@ a {
   }
 }
 
+.display-on-hover {
+  text-decoration: none !important;
+  border-bottom: 2px solid var(--gray-5) !important;
+}
+
+.display-on-hover:hover {
+  border-bottom: 2px solid var(--gray-9)!important;
+}
+
+.rough-annotation {
+  z-index: -1 !important;
+}
+
+.rt-Card.rt-variant-surface::after{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.rt-Card {
+  --card-padding: var(--space-9) !important;
+  border-radius: var(--radius-5) !important;
+}
